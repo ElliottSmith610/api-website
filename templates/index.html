@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Name Predictions</h1>
+<form action="/" method="post">
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+
+    </table>
+</form>
+{% if data %}
+<hr>
+<p>Name: {{ data.name }}</p>
+<p>Age: {{ data.age }}</p>
+<p>Gender: {{ data.gender }}</p>
+<p>Nationality: {{ data.nationality }}</p>
+{% endif %}
+</body>
+</html>
